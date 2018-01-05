@@ -37,11 +37,11 @@ define('AUTH_SALT', 'g)(*)Um9SXCqWWvSDm6&^&k3iwMqPghWzTgqMSiy)(&*&RaAoMdbyLNuRdv
 
 class locationdbconfig {
     // database hostname
-    protected static $host = "ap-cdbr-azure-southeast-b.cloudapp.net";
+    protected static $host = "";
     // database username
-    protected static $username = "b8734c96f67e70";
+    protected static $username = "";
     // database password
-    protected static $password = "6a134fe0";
+    protected static $password = "";
     //database name
     protected static $dbname = "location";
 
