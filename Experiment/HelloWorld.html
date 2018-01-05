@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello JavaScript</title>
+</head>
+<body>
+    <p id="write"></p>
+    <button onclick="myFunction3()">Click!</button>
+    <p id="printwhile"></p>
+
+    <script style="text/javascript">
+        var info ="";
+        var student ={firstname: "Ashwini", lastname: "Gupta", grade: "B+"};
+        var x;
+
+        for (x in student){
+            info +=student[x] + " ";
+        }
+        document.getElementById("write").innerHTML = info;
+        function myFunction3() {
+            var  text = "";
+            var i = 0;
+
+            while (i<5){
+                text += "<br>Value of I: " +i;
+                i++;
+            }
+            document.getElementById("printwhile").innerHTML = text;
+        }
+
+        document.writeln("Hello World!");
+        var myName = "Ashwini Gupta";
+        var myAddress = "Bhopal";
+        document.writeln("My Name is " + myName + " And I Live in " + myAddress);
+
+        function myFunction() {
+            alert("This is an Alert!")
+        }
+        function myFunction2() {
+            var strUser
+            strUser = prompt("Enter UserName:");
+            document.getElementById("display").innerHTML = "Hello "+strUser + "!"; //Looking for id display and passing HTML code
+        }
+        </script><br>
+        <button onclick="myFunction()">Click Me!</button>
+        <button onclick="myFunction2()">Click Me!</button>
+
+        <p id="display"></p>
+
+    </body>
+</html>
